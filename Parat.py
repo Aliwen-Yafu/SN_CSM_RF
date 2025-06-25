@@ -293,8 +293,8 @@ def probability_of_discovery(s,b,p_value_needed = 2.7e-3) :
     p = p_val( n, mu = s+b) 
     return p
 
-def compute_values(distance, dec,tsa,tso,ccc =CalcRate(),IIP=Parameters(kineticEnergy=1e51, ejectaMass=16, Dstar=1.34e-4, delta=12, epsCR=0.1, s=2, epsB=0.01, Rstar=6e13)):
+'''def compute_values(distance, dec,tsa,tso,ccc =CalcRate(),IIP=Parameters(kineticEnergy=1e51, ejectaMass=16, Dstar=1.34e-4, delta=12, epsCR=0.1, s=2, epsB=0.01, Rstar=6e13)):
     signal, background = get_sigback(IIP,ccc, distance, dec, tsa, tso)
     #pvalue = probability_of_discovery(signal, background)
     return signal, background, #pvalue
-
+'''
